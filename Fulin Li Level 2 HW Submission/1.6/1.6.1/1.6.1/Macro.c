@@ -13,7 +13,7 @@ void main()
 	char str1[20], char str2[20];
 
 	// Ask the user to input a and b.
-	printf("Please input two strings separated by enter");
+	printf("Please input two strings separated by space");
 	
 	if (scanf_s("%s %s", str1, str2))
 	{
