@@ -20,10 +20,10 @@ void main()
 	// Print the contents of current line on screen
 	// str - contents of the current line
 	// n_count - number of characters in the current line.
-	void PrintCharOnScreen(char str[MAX_LENGTH], int n_count);
+	void echo_char(char str[MAX_LENGTH], int n_count);
 
 	// Ask the user to input characters.
-	printf("Please input characters, use ENTER to display characters line by line, use CTRL + A to end.\n");
+	printf("Please input characters, and press ENTER to display characters line by line, use CTRL + A to end.\n");
 
 	// When the user doesn't input CTRL + A, keep reading characters.
 	while ((char_input = getchar()) != 1)
@@ -31,7 +31,7 @@ void main()
 		// When the user press ENTER, print the current line on screen.
 		if (char_input == 10 && n_count > 0)
 		{
-			PrintCharOnScreen(str, n_count);
+			echo_char(str, n_count);
 
 			// Intialize the number of characters belong to the next line to 0.
 			n_count = 0;
@@ -47,14 +47,14 @@ void main()
 	if (n_count > 0)
 	{
 		// Print the current line on screen.
-		PrintCharOnScreen(str, n_count);
+		echo_char(str, n_count);
 	}
 
 	// When program ends, display the following message.
 	printf("CTRL + A is a correct ending.\n");
 }
 
-void PrintCharOnScreen(char str[MAX_LENGTH], int n_count)
+void echo_char(char str[MAX_LENGTH], int n_count)
 {
 	for (int i = 0; i <= n_count - 1; i++)
 	{
