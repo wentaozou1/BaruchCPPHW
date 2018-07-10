@@ -36,12 +36,12 @@ int main()
 
 int Length(char str[])
 {
-	int length = 0;
+	int len = 0;
 	
-	while (str[length] != '\0')
+	while (str[len] != '\0')
 	{
-		length++;
+		len++;
 	}
 
-	return length;
+	return len;
 }
