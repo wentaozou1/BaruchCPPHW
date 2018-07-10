@@ -10,5 +10,5 @@
 #endif 
 
 #ifndef PRINT2
-#define PRINT2(a, b) printf("str1: %s\n str2: %s", str1, str2)
+#define PRINT2(str1, str2) printf("str1: %s\n str2: %s", str1, str2)
 #endif 
