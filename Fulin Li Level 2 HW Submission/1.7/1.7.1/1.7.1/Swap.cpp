@@ -36,9 +36,9 @@ void main()
 
 void Swap(double* pi, double* pj)
 {
-	double temp;
+	double tem;
 	
-	temp = (*pi);
+	tem = (*pi);
 	(*pi) = (*pj);
-	(*pj) = temp;	
+	(*pj) = tem;	
 }
