@@ -32,8 +32,14 @@ void main()
 void DayName(int n_Day)
 {
 	// A two-dimensional array storing the day name.
-	char day_string[7][10] = {"Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday",
-								"Saturday"};
+	const char *day_string[7];
+	a[0] = "Sunday";
+	a[1] = "Monday";
+	a[2] = "Tuesday";
+	a[3] = "Wednesday";
+	a[4] = "Thursday";
+	a[5] = "Friday";
+	a[6] = "Saturday";
 	
 	// Print the day name.
 	printf("Day %d is a %s.\n", n_Day, day_string[n_Day - 1]);
