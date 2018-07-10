@@ -14,7 +14,7 @@
 
 struct Article
 {
-	int number; // Article number
+	int ar_number; // Article number
 	int quantity; // Quantity
 	char description[LENGTH + 1]; // Description
 };
@@ -28,9 +28,9 @@ void main()
 	void Print(struct Article* p_article);
 
 	// Initialize the contents of article.
-	article.number = 1;
-	article.quantity = 10;
-	strcpy_s(article.description, "An article on MATLAB");
+	article.ar_number = 520;
+	article.quantity = 1314;
+	strcpy_s(article.description, "I love Lewei Wang");
 
 	// Print the contents of article.
 	Print(&article);
