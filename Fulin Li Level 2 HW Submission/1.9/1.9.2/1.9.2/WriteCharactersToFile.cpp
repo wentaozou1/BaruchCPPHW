@@ -27,7 +27,7 @@ void main()
 	// str_file - file name
 	// str - the contents of currentline
 	// n_count - number of characters in the current line.
-	void WriteToFile(char str_file[MAX_NAME_LENGTH], char str[MAX_LENGTH], int n_count);
+	void toFile(char str_file[MAX_NAME_LENGTH], char str[MAX_LENGTH], int n_count);
 
 	// Ask the user to input file name.
 	printf("Please input a string as file name, example:\nfile.txt\n");
@@ -36,7 +36,7 @@ void main()
 	gets_s(str_file);
 	
 	// Ask the user to input characters.
-	printf("Please input characters, use ENTER to write characters to the specified file, use CTRL + A to end.\n");
+	printf("Please input characters, press ENTER to write characters to the specified file, use CTRL + A to end.\n");
 
 	// When the user doesn't input CTRL + A, keep reading characters.
 	while ((char_input = getchar()) != 1)
@@ -61,14 +61,14 @@ void main()
 	if (n_count > 0)
 	{
 		// Write the current line to file.
-		WriteToFile(str_file, str, n_count);
+		toFile(str_file, str, n_count);
 	}
 
 	// When program ends, display the following message.
 	printf("CTRL + A is a correct ending.\n");
 }
 
-void WriteToFile(char str_file[MAX_NAME_LENGTH], char str[MAX_LENGTH], int n_count)
+void toFile(char str_file[MAX_NAME_LENGTH], char str[MAX_LENGTH], int n_count)
 {
 	errno_t err; // indicate whether the file is opened
 	FILE* fp; // file handle
