@@ -10,18 +10,18 @@
 
 void main()
 {
-	double a, b;
+	char str1[20], char str2[20];
 
 	// Ask the user to input a and b.
-	printf("Please input two numbers using the following format:\na b\n");
-
-	if (scanf_s("%lf %lf", &a, &b))
+	printf("Please input two strings separated by enter");
+	
+	if (scanf_s("%s %s", str1, str2))
 	{
 		// Print variable a.
-		PRINT1(a, b);
+		PRINT1(str1, str2);
 
 		// Print variable a and b.
-		PRINT2(a, b);
+		PRINT2(str1, str2;
 	}
 	else
 	{
