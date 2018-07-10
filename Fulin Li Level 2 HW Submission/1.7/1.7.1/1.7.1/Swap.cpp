@@ -17,16 +17,16 @@ void main()
 	void Swap(double* pi, double* pj);
 
 	// Ask the user to input two numbers.
-	printf("Please input two numbers in the following format:\ni j\n");
+	printf("Please input two numbers separated by space");
 
 	if (scanf_s("%lf %lf", &i, &j))
 	{
-		printf("i = %lf, j = %lf.\n", i, j);
+		printf("Your i is %lf, and your j is %lf.\n", i, j);
 
 		// Swap i and j.
 		Swap(&i, &j);
 
-		printf("If we swap i and j, then i = %lf, j = %lf.\n", i, j);
+		printf("After swap, your i is now %lf, and j is %lf.\n", i, j);
 	}
 	else
 	{
