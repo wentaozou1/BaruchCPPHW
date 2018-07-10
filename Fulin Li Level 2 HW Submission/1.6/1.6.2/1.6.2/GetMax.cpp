@@ -14,15 +14,15 @@ void main()
 	double a, b, c;
 
 	// Ask the user to input three numbers.
-	printf("Please input three numbers in the following format:\na b c\n");
+	printf("Please input three numbers");
 
 	if (scanf_s("%lf %lf %lf", &a, &b, &c))
 	{
 		// Print the maximum value of a and b using MAX2.
-		printf("The maximum value of %lf and %lf is %lf.\n", a, b, MAX2(a, b));
+		printf("%lf is bigger between %lf and %lf.\n",  MAX2(a, b),a, b);
 
 		// Print the maximum value of a, b and c using MAX3.
-		printf("The maximum value of %lf, %lf and %lf is %lf.\n", a, b, c, MAX3(a, b, c));
+		printf("%lf is the biggest among %lf, %lf and %lf.\n",  MAX3(a, b, c), a, b, c);
 	}
 	else
 	{
