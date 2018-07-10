@@ -43,5 +43,5 @@ int Length(char str[])
 		length++;
 	}
 
-	return --length;
+	return length;
 }
