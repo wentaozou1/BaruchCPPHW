@@ -28,7 +28,7 @@ private:
 public:
 	Point(); // Default constructor
 	Point(const Point& point); // Copy constructor
-	Point(double xValue, double yValue); // Constructor that accepts x- and y-coordinates
+	Point(double x, double y); // Constructor that accepts x- and y-coordinates
 
 	~Point(); // Destructor
 
