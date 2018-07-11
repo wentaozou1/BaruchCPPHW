@@ -13,7 +13,7 @@
 class Circle
 {
 private:
-	Point p_center;
+	Point m_center;
 	double m_radius;
 
 public:
@@ -28,8 +28,8 @@ public:
 	double Radius() const;
 
 	// Setter functions for center and radius
-	void CentrePoint(const Point& newCenter);
-	void Radius(double newR);
+	void CentrePoint(const Point& center);
+	void Radius(double r);
 	
 	// Getter functions for other parameters
 	double Diameter() const;
