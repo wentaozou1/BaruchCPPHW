@@ -20,7 +20,7 @@ void main()
 	double x2, y2;
 
 	// Ask the user for the x- and y-coordinates of point1.
-	cout << "Please input x and y of Point1 in the following format:" << endl << "x y" << endl;
+	cout << "Please input x and y of Point1 separated by space" << endl;
 
 	if (!(cin >> x1 >> y1))
 	{
