@@ -15,11 +15,11 @@ Circle::Circle()
 {
 }
 
-Circle::Circle(const Point& center, double r) : p_center(center), m_radius(r)
+Circle::Circle(const Point& center, double r) : m_center(center), m_radius(r)
 {
 }
 
-Circle::Circle(const Circle& circle) : p_center(circle.p_center), m_radius(circle.m_radius)
+Circle::Circle(const Circle& circle) : m_center(circle.p_center), m_radius(circle.m_radius)
 {
 }
 
@@ -29,7 +29,7 @@ Circle::~Circle()
 
 Point Circle::CentrePoint() const
 {
-	return p_center;
+	return m_center;
 }
 
 double Circle::Radius() const
@@ -37,14 +37,14 @@ double Circle::Radius() const
 	return m_radius;
 }
 
-void Circle::CentrePoint(const Point& newCenter)
+void Circle::CentrePoint(const Point& center)
 {
-	p_center = newCenter;
+	p_center = center;
 }
 
-void Circle::Radius(double newR)
+void Circle::Radius(double r)
 {
-	m_radius = newR;
+	m_radius = r;
 }
 
 double Circle::Diameter() const
