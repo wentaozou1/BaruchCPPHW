@@ -30,8 +30,8 @@ public:
 	Point P2() const; // Overloaded getter for the end point
 
 	// Modifiers
-	void P1(const Point& newP1); // Overloaded setter for the start point
-	void P2(const Point& newP2); // Overloaded setter for the end point
+	void P1(const Point& p1); // Overloaded setter for the start point
+	void P2(const Point& p2); // Overloaded setter for the end point
 
 	double Length() const; // Return the length of the line.
 	string ToString() const; // Return the desciption of the line.
