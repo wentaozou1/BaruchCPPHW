@@ -27,7 +27,7 @@ Point::Point(const Point& point) : m_x(point.m_x), m_y(point.m_y) // Copy constr
 {
 }
 
-Point::Point(double xValue, double yValue) : m_x(xValue), m_y(yValue) // Constructor that accepts x- and y-coordinates
+Point::Point(double x, double y) : m_x(x), m_y(y) // Constructor that accepts x- and y-coordinates
 {
 }
 
