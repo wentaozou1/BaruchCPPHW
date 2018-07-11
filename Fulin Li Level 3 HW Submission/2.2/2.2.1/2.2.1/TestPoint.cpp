@@ -15,7 +15,7 @@ void main()
 	double newX, newY;
 
 	// Ask the user for the x- and y-coordinates.
-	cout << "Please input x and y in the following format:" << endl << "x y" << endl;
+	cout << "Please input x and y separated by space" << endl << "x y" << endl;
 
 	if (!(cin >> newX >> newY))
 	{
@@ -34,5 +34,5 @@ void main()
 	cout << point.ToString() << endl;
 
 	// Print the point coordinates.
-	cout << point.GetX() << " " << point.GetY() << endl;
+	cout << point.GetX() << "," << point.GetY() << endl;
 }
