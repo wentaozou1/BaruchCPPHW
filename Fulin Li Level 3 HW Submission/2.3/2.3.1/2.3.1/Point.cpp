@@ -27,7 +27,7 @@ Point::Point(const Point& point) : m_x(point.m_x), m_y(point.m_y) // Copy constr
 
 Point::Point(double xValue, double yValue) : m_x(xValue), m_y(yValue) // Constructor that accepts x- and y-coordinates
 {
-	cout << "Constructor Accepting x- and y-coordinates Called." << endl;
+	cout << "Custom Constructor Called." << endl;
 }
 
 Point::~Point() // Destructor
