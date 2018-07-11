@@ -27,7 +27,7 @@ Point::Point(const Point& point) : m_x(point.m_x), m_y(point.m_y) // Copy constr
 	cout << "Copy Constructor Called." << endl;
 }
 
-Point::Point(double xValue, double yValue) : m_x(xValue), m_y(yValue) // Constructor that accepts x- and y-coordinates
+Point::Point(double x, double y) : m_x(x), m_y(y) // Constructor that accepts x- and y-coordinates
 {
 	cout << "Constructor Accepting x- and y-coordinates Called." << endl;
 }
@@ -47,14 +47,14 @@ double Point::Y()
 	return m_y;
 }
 
-void Point::X(double newX)
+void Point::X(double x)
 {
-	m_x = newX;
+	m_x = x;
 }
 
-void Point::Y(double newY)
+void Point::Y(double y)
 {
-	m_y = newY;
+	m_y = y;
 }
 
 string Point::ToString()
