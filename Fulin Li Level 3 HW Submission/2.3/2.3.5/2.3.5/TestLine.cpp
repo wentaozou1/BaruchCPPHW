@@ -17,8 +17,7 @@ void main()
 	double x2, y2;
 
 	// Ask the user for the x- and y-coordinates of the start point.
-	cout << "Please input x and y of the start point in the following format:" 
-		<< endl << "x y" << endl;
+	cout << "Please input x and y of the start point separated by space" << endl;
 
 	if (!(cin >> x1 >> y1))
 	{
@@ -27,8 +26,7 @@ void main()
 	}
 
 	// Ask the user for the x- and y-coordinates of the end point.
-	cout << "Please input x and y of the end point in the following format:" 
-		<< endl << "x y" << endl;
+	cout << "Please input x and y of the end point separated by space" << endl;
 
 	if (!(cin >> x2 >> y2))
 	{
