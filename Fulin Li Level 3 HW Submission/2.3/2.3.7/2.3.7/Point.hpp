@@ -29,7 +29,7 @@ private:
 public:
 	Point(); // Default constructor
 	Point(const Point& point); // Copy constructor
-	Point(double xValue, double yValue); // Constructor that accepts x- and y-coordinates
+	Point(double x, double y); // Constructor that accepts x- and y-coordinates
 
 	~Point(); // Destructor
 
@@ -38,8 +38,8 @@ public:
 	double Y() const; // Getter function for y-coordinate
 
 	// Modifiers
-	void X(double newX) { m_x = newX; } // Setter function for x-coordinate
-	void Y(double newY) { m_y = newY; } // Setter function for y-coordinate
+	void X(double x) { m_x = x; } // Setter function for x-coordinate
+	void Y(double y) { m_y = y; } // Setter function for y-coordinate
 
 	string ToString() const; // String description of the point
 
