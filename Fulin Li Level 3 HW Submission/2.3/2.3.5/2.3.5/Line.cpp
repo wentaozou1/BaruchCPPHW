@@ -35,14 +35,14 @@ Point Line::P2() const
 	return p2;
 }
 
-void Line::P1(const Point& newP1)
+void Line::P1(const Point& p1)
 {
-	p1 = newP1;
+	self.p1 = p1;
 }
 
-void Line::P2(const Point& newP2)
+void Line::P2(const Point& p2)
 {
-	p2 = newP2;
+	self.p2 = p2;
 }
 
 double Line::Length() const
