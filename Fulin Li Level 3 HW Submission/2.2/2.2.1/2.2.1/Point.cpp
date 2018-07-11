@@ -27,14 +27,14 @@ double Point::GetY()
 	return m_y;
 }
 
-void Point::SetX(double newX)
+void Point::SetX(double x)
 {
-	m_x = newX;
+	m_x = x;
 }
 
-void Point::SetY(double newY)
+void Point::SetY(double y)
 {
-	m_y = newY;
+	m_y = y;
 }
 
 string Point::ToString()
