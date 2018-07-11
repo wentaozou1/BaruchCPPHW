@@ -15,7 +15,7 @@ void main()
 	double newX, newY;
 
 	// Ask the user for the x- and y-coordinates.
-	cout << "Please input x and y separated by space" << endl << "x y" << endl;
+	cout << "Please input x and y separated by space" << endl;
 
 	if (!(cin >> newX >> newY))
 	{
