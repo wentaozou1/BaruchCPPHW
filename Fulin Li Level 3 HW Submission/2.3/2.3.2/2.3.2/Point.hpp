@@ -34,8 +34,8 @@ public:
 	double GetY(); // Getter function for y-coordinate
 
 	// Modifiers
-	void SetX(double newX); // Setter function for x-coordinate
-	void SetY(double newY); // Setter function for y-coordinate
+	void SetX(double x); // Setter function for x-coordinate
+	void SetY(double y); // Setter function for y-coordinate
 
 	string ToString(); // String description of the point
 
