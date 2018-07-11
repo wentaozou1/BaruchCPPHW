@@ -17,8 +17,7 @@ void main()
 	double r;
 
 	// Ask the user for the x- and y-coordinates of the center.
-	cout << "Please input x and y of the center in the following format:"
-		<< endl << "x y" << endl;
+	cout << "Please input x and y of the center separated by space" << endl;
 
 	if (!(cin >> x >> y))
 	{
